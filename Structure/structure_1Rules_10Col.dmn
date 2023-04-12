@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="Definitions_1ul7aia" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="4.12.0">
+  <decision id="Decision_0unyeeo" name="Decision 1">
+    <decisionTable id="DecisionTable_1ug3pg9" hitPolicy="FIRST">
+      <input id="InputClause_1187o13" label="Income">
+        <inputExpression id="LiteralExpression_186afhx" typeRef="number">
+          <text>income</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1sbjbz7" label="Income">
+        <inputExpression id="LiteralExpression_1n036ja" typeRef="number">
+          <text>income2</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_13hwh9q" label="Income">
+        <inputExpression id="LiteralExpression_08i1z14" typeRef="number">
+          <text>income3</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1mdv4pf" label="Income">
+        <inputExpression id="LiteralExpression_17yv5c8" typeRef="number">
+          <text>income4</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0yaoiyb" label="Income">
+        <inputExpression id="LiteralExpression_0ucl1wn" typeRef="number">
+          <text>income5</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_12i3wow" label="Income">
+        <inputExpression id="LiteralExpression_1xspwf2" typeRef="number">
+          <text>income6</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1a7tbgo" label="Income">
+        <inputExpression id="LiteralExpression_1gbk2lm" typeRef="number">
+          <text>income7</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0z4c33o" label="Income">
+        <inputExpression id="LiteralExpression_1r1kyeq" typeRef="number">
+          <text>income8</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1brm4sl" label="Income">
+        <inputExpression id="LiteralExpression_0ivgb8q" typeRef="number">
+          <text>income9</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1pws3eo" label="Income">
+        <inputExpression id="LiteralExpression_1ssdd1p" typeRef="number">
+          <text>income10</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="Eligibility" name="eligibility" typeRef="string" />
+      <rule id="DecisionRule_1uztgp1">
+        <inputEntry id="UnaryTests_1jxe7xu">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0r9mj2j">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0pditc8">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0y95vop">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0dll0rl">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1pu8lwn">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0a0zcye">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1nab7ja">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ufg7g5">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1hufxjx">
+          <text>&lt;2</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_12le3ff">
+          <text>"Rejected"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="Decision_0unyeeo">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

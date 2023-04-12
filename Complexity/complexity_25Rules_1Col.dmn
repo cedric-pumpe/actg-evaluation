@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="Definitions_1ul7aia" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="4.12.0">
+  <decision id="Decision_0unyeeo" name="Decision 1">
+    <decisionTable id="DecisionTable_1ug3pg9" hitPolicy="FIRST">
+      <input id="InputClause_1187o13" label="Income">
+        <inputExpression id="LiteralExpression_186afhx" typeRef="number">
+          <text>income</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="Eligibility" name="eligibility" typeRef="string" />
+      <rule id="DecisionRule_1uztgp1">
+        <inputEntry id="UnaryTests_1jxe7xu">
+          <text>&lt;1</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_12le3ff">
+          <text>"Rejected"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0w954zf">
+        <inputEntry id="UnaryTests_180kbbo">
+          <text>&lt;2</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1su0rgq">
+          <text>"Approved"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_13xyjay">
+        <inputEntry id="UnaryTests_1guhp0j">
+          <text>&lt;3</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1eppd7p">
+          <text>"Rejected"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0o44fj8">
+        <inputEntry id="UnaryTests_0dk0j68">
+          <text>&lt;4</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1r2qlrj">
+          <text>"Approved"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_065wsud">
+        <inputEntry id="UnaryTests_1y62yjc">
+          <text>&lt;5</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_053d9p1">
+          <text>"Approved"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1ap1iqh">
+        <inputEntry id="UnaryTests_1m5ybiz">
+          <text>&lt;6</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0q9ko9a">
+          <text>"Approved"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1k0l28r">
+        <inputEntry id="UnaryTests_195qym2">
+          <text>&lt;7</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_04y1jab">
+          <text>"Rejected"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0gcgywa">
+        <inputEntry id="UnaryTests_0wemqpi">
+          <text>&lt;8</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1jgx5ww">
+          <text>"Approved"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_05f180l">
+        <inputEntry id="UnaryTests_02447nf">
+          <text>&lt;9</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0thkw44">
+          <text>"Rejected"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1qp8b6c">
+        <inputEntry id="UnaryTests_1dcocwa">
+          <text>&lt;10</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_17kl6vu">
+          <text>"Rejected"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0eyhrg4">
+        <inputEntry id="UnaryTests_1psuppu">
+          <text>&lt;11</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0mpiphw">
+          <text>"Approved"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_18z5ox2">
+        <inputEntry id="UnaryTests_171esgv">
+          <text>&lt;12</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0bv1ii0">
+          <text>"Approved"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1y6nwim">
+        <inputEntry id="UnaryTests_1vdgwea">
+          <text>&lt;13</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0ti8wip">
+          <text>"Rejected"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1jmo3xj">
+        <inputEntry id="UnaryTests_173gngt">
+          <text>&lt;14</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1sccchd">
+          <text>"Rejected"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1lrp3v9">
+        <inputEntry id="UnaryTests_1f93lqx">
+          <text>&lt;15</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0xj9idf">
+          <text>"Approved"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_05brcgq">
+        <inputEntry id="UnaryTests_0hgncqf">
+          <text>&lt;16</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_07vqcks">
+          <text>"Approved"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_05ulvr2">
+        <inputEntry id="UnaryTests_19etu74">
+          <text>&lt;17</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_120lvt0">
+          <text>"Rejected"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_10zsvpm">
+        <inputEntry id="UnaryTests_1owdldy">
+          <text>&lt;18</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0nu7ms2">
+          <text>"Approved"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_049e58y">
+        <inputEntry id="UnaryTests_1ltkeou">
+          <text>&lt;19</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1dj3do6">
+          <text>"Approved"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1bhljlq">
+        <inputEntry id="UnaryTests_1qasn5m">
+          <text>&lt;20</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1eszkb7">
+          <text>"Rejected"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_191ef3e">
+        <inputEntry id="UnaryTests_1r0jpux">
+          <text>&lt;21</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1rwzjf1">
+          <text>"Rejected"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_08oyi88">
+        <inputEntry id="UnaryTests_08mh5ly">
+          <text>&lt;22</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1jb8vkt">
+          <text>"Approved"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0yoke5p">
+        <inputEntry id="UnaryTests_13urdm1">
+          <text>&lt;23</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0i9grat">
+          <text>"Approved"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1h3wb3t">
+        <inputEntry id="UnaryTests_1irxw9f">
+          <text>&lt;24</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0vtdcyk">
+          <text>"Rejected"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1vwn6h6">
+        <inputEntry id="UnaryTests_17kvcn0">
+          <text>&lt;25</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1tooz6z">
+          <text>"Rejected"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="Decision_0unyeeo">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

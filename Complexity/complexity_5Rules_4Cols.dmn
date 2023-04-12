@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" id="Definitions_1ul7aia" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="4.12.0">
+  <decision id="Decision_0unyeeo" name="Decision 1">
+    <decisionTable id="DecisionTable_1ug3pg9" hitPolicy="FIRST">
+      <input id="Input_1" label="Age" biodi:width="192">
+        <inputExpression id="InputExpression_1" typeRef="number">
+          <text>age</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1187o13" label="Income">
+        <inputExpression id="LiteralExpression_186afhx" typeRef="number">
+          <text>income</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0w5ulkl" label="Debt">
+        <inputExpression id="LiteralExpression_0h0s0li" typeRef="number">
+          <text>debt</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0yipel3" label="Married">
+        <inputExpression id="LiteralExpression_0wmhph1" typeRef="boolean">
+          <text>married</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="Eligibility" name="eligibility" typeRef="string" />
+      <rule id="DecisionRule_1uztgp1">
+        <inputEntry id="UnaryTests_1rwicnu">
+          <text>before(?,26)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1jxe7xu">
+          <text>&lt;2000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1i61xyp">
+          <text>[0..10000]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1owcz6r">
+          <text>false</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_12le3ff">
+          <text>"Rejected"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0w954zf">
+        <inputEntry id="UnaryTests_03r6ru6">
+          <text>before(?,26)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_180kbbo">
+          <text>&lt;2000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0q65mrc">
+          <text>(10000..20000)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_134a2yc">
+          <text>true</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1su0rgq">
+          <text>"Approved"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_13xyjay">
+        <inputEntry id="UnaryTests_07boy7v">
+          <text>before(?,26)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1guhp0j">
+          <text>&lt;4000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ld1wkh">
+          <text> [0..5000]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ben71d">
+          <text>false</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1eppd7p">
+          <text>"Rejected"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0o44fj8">
+        <inputEntry id="UnaryTests_0a1z5y2">
+          <text>before(?,26)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0dk0j68">
+          <text>&lt;4000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0tpbccd">
+          <text>(5000..15000)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_16x2h2e">
+          <text>true</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1r2qlrj">
+          <text>"Approved"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1k0l28r">
+        <inputEntry id="UnaryTests_1ban8s8">
+          <text>before(?,26)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_195qym2">
+          <text>&gt;= 40000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_098mwl3">
+          <text>[0..15000]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ys2r4p">
+          <text>false</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_04y1jab">
+          <text>"Rejected"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="Decision_0unyeeo">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

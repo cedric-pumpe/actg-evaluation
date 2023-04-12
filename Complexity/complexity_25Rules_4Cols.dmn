@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" id="Definitions_1ul7aia" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="4.12.0">
+  <decision id="Decision_0unyeeo" name="Decision 1">
+    <decisionTable id="DecisionTable_1ug3pg9" hitPolicy="FIRST">
+      <input id="Input_1" label="Age" biodi:width="192">
+        <inputExpression id="InputExpression_1" typeRef="number">
+          <text>age</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1187o13" label="Income">
+        <inputExpression id="LiteralExpression_186afhx" typeRef="number">
+          <text>income</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0w5ulkl" label="Debt">
+        <inputExpression id="LiteralExpression_0h0s0li" typeRef="number">
+          <text>debt</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0yipel3" label="Married">
+        <inputExpression id="LiteralExpression_0wmhph1" typeRef="boolean">
+          <text>married</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="Eligibility" name="eligibility" typeRef="string" />
+      <rule id="DecisionRule_1uztgp1">
+        <inputEntry id="UnaryTests_1rwicnu">
+          <text>before(?,26)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1jxe7xu">
+          <text>&lt;2000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1i61xyp">
+          <text>[0..10000]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1owcz6r">
+          <text>false</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_12le3ff">
+          <text>"Rejected"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0w954zf">
+        <inputEntry id="UnaryTests_03r6ru6">
+          <text>before(?,26)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_180kbbo">
+          <text>&lt;2000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0q65mrc">
+          <text>(10000..20000)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_134a2yc">
+          <text>true</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1su0rgq">
+          <text>"Approved"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_13xyjay">
+        <inputEntry id="UnaryTests_07boy7v">
+          <text>before(?,26)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1guhp0j">
+          <text>&lt;4000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ld1wkh">
+          <text> [0..5000]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ben71d">
+          <text>false</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1eppd7p">
+          <text>"Rejected"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0o44fj8">
+        <inputEntry id="UnaryTests_0a1z5y2">
+          <text>before(?,26)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0dk0j68">
+          <text>&lt;4000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0tpbccd">
+          <text>(5000..15000)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_16x2h2e">
+          <text>true</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1r2qlrj">
+          <text>"Approved"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_065wsud">
+        <inputEntry id="UnaryTests_0oq4t9s">
+          <text>before(?,26)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1y62yjc">
+          <text>&lt;4000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0g7w6k4">
+          <text>(15000..30000)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1kfa92q">
+          <text>true</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_053d9p1">
+          <text>"Approved"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1ap1iqh">
+        <inputEntry id="UnaryTests_0npwc6a">
+          <text>before(?,26)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1m5ybiz">
+          <text>&lt; 40000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0feeqmy">
+          <text>(30000..50000)	</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1osc8wx">
+          <text>true</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0q9ko9a">
+          <text>"Approved"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1k0l28r">
+        <inputEntry id="UnaryTests_1ban8s8">
+          <text>before(?,26)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_195qym2">
+          <text>&gt;= 40000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_098mwl3">
+          <text>[0..15000]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ys2r4p">
+          <text>false</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_04y1jab">
+          <text>"Rejected"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0gcgywa">
+        <inputEntry id="UnaryTests_09e5r4p">
+          <text>before(?,26)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0wemqpi">
+          <text>&gt;= 40000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_14tufbe">
+          <text>(15000..35000)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1kupjt9">
+          <text>true</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1jgx5ww">
+          <text>"Approved"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_05f180l">
+        <inputEntry id="UnaryTests_0j0lg5k">
+          <text>(not(before(?, 26))) and (before(?,66))</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_02447nf">
+          <text>&lt; 20000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_09l0erf">
+          <text>[0..5000]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0gkmraz">
+          <text>false</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0thkw44">
+          <text>"Rejected"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1qp8b6c">
+        <inputEntry id="UnaryTests_1kh4tvh">
+          <text>(not(before(?, 26))) and (before(?,66))</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1dcocwa">
+          <text>&lt; 20000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_19i4ss3">
+          <text>(5000..15000)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_150blmm">
+          <text>true</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_17kl6vu">
+          <text>"Rejected"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0eyhrg4">
+        <inputEntry id="UnaryTests_00hybkh">
+          <text>(not(before(?, 26))) and (before(?,66))</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1psuppu">
+          <text>&lt; 20000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_09s7b2e">
+          <text>(15000..30000)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ny53bk">
+          <text>true</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0mpiphw">
+          <text>"Approved"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_18z5ox2">
+        <inputEntry id="UnaryTests_0q4nnu7">
+          <text>(not(before(?, 26))) and (before(?,66))</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_171esgv">
+          <text>&lt; 20000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_05rnr9z">
+          <text>(30000..50000)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_03sidrt">
+          <text>true</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0bv1ii0">
+          <text>"Approved"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1y6nwim">
+        <inputEntry id="UnaryTests_1kudip7">
+          <text>(not(before(?, 26))) and (before(?,66))</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1vdgwea">
+          <text>&lt; 40000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ojenff">
+          <text>[0..5000]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1cd7mea">
+          <text>false</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0ti8wip">
+          <text>"Rejected"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1jmo3xj">
+        <inputEntry id="UnaryTests_05paguq">
+          <text>(not(before(?, 26))) and (before(?,66))</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_173gngt">
+          <text>&lt; 40000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0yvv6xt">
+          <text>(5000..15000)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0e7lz5y">
+          <text>true</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1sccchd">
+          <text>"Rejected"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1lrp3v9">
+        <inputEntry id="UnaryTests_0ow1stp">
+          <text>(not(before(?, 26))) and (before(?,66))</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1f93lqx">
+          <text>&lt; 40000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ng8145">
+          <text>(15000..30000)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0jpqdf9">
+          <text>true</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0xj9idf">
+          <text>"Approved"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_05brcgq">
+        <inputEntry id="UnaryTests_1qhotvo">
+          <text>(not(before(?, 26))) and (before(?,66))</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0hgncqf">
+          <text>&lt; 40000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0aqsvpy">
+          <text>(30000..50000)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1skxnl7">
+          <text>true</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_07vqcks">
+          <text>"Approved"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_05ulvr2">
+        <inputEntry id="UnaryTests_01trlue">
+          <text>(not(before(?, 26))) and (before(?,66))</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_19etu74">
+          <text>&gt;= 40000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0l5rm6l">
+          <text>[0..15000]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_13wyveu">
+          <text>false</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_120lvt0">
+          <text>"Rejected"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_10zsvpm">
+        <inputEntry id="UnaryTests_19cvj9v">
+          <text>(not(before(?, 26))) and (before(?,66))</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1owdldy">
+          <text>&gt;= 40000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0sclu10">
+          <text>(15000..35000)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0rmk4ny">
+          <text>false</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0nu7ms2">
+          <text>"Approved"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_049e58y">
+        <inputEntry id="UnaryTests_1i5st5n">
+          <text>(not(before(?, 26))) and (before(?,66))</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ltkeou">
+          <text>&gt;= 40000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_11ex5wn">
+          <text>(35000..55000)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_13gej8d">
+          <text>false</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1dj3do6">
+          <text>"Approved"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0xb0mgq">
+        <inputEntry id="UnaryTests_1jfgf28">
+          <text>after(?,65)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0sml5lz">
+          <text>&lt; 20000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0j10crq">
+          <text> [0..5000]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0o7rbh0">
+          <text>false</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0e2ksxp">
+          <text>"Rejected"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0zf1ois">
+        <inputEntry id="UnaryTests_1teg201">
+          <text>after(?,65)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_17jcvdv">
+          <text>&gt;= 20000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0n02c4m">
+          <text> [0..15000]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1xf69vc">
+          <text>false</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1v29ww3">
+          <text>"Rejected"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0rpgaov">
+        <inputEntry id="UnaryTests_0fgmhke">
+          <text>after(?,65)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1kq6p7d">
+          <text>&lt; 20000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0pmtr4e">
+          <text> [0..5000]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1jchzeh">
+          <text>true</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0krpu6k">
+          <text>"Approved"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_15q81e3">
+        <inputEntry id="UnaryTests_1wewfpk">
+          <text>after(?,65)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0wy4fpp">
+          <text>&gt;= 20000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_15qqbl7">
+          <text> [0..15000]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_137x9sa">
+          <text>true</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1f6psrf">
+          <text>"Approved"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0sidqjh">
+        <inputEntry id="UnaryTests_02h3uiy">
+          <text>after(?,65)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1mcjdba">
+          <text>&gt;= 20000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1uzyugk">
+          <text>[100000..200000]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0shcwzk">
+          <text>false</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_026amy0">
+          <text>"Rejected"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0t6449s">
+        <inputEntry id="UnaryTests_1slwzmn">
+          <text>after(?,65)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1dsenlm">
+          <text>&gt;= 20000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0r5oqg3">
+          <text>[100000..200000]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_10smjb0">
+          <text>true</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1thikmg">
+          <text>"Approved"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="Decision_0unyeeo">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="Definitions_1ul7aia" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="4.12.0">
+  <decision id="Decision_0unyeeo" name="Decision 1">
+    <decisionTable id="DecisionTable_1ug3pg9" hitPolicy="FIRST">
+      <input id="InputClause_1187o13" label="Income">
+        <inputExpression id="LiteralExpression_186afhx" typeRef="number">
+          <text>income1</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_13hwh9q" label="Income">
+        <inputExpression id="LiteralExpression_08i1z14" typeRef="number">
+          <text>income2</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1e9rmfa" label="Income">
+        <inputExpression id="LiteralExpression_1gmmtoe" typeRef="number">
+          <text>income3</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0pzswwn" label="Income">
+        <inputExpression id="LiteralExpression_1pyh8wp" typeRef="number">
+          <text>income4</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_103atro" label="Income">
+        <inputExpression id="LiteralExpression_0xy8b77" typeRef="number">
+          <text>income5</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0ovj98l" label="Income">
+        <inputExpression id="LiteralExpression_0eavtds" typeRef="number">
+          <text>income6</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_19am4n5" label="Income">
+        <inputExpression id="LiteralExpression_1tv97u6" typeRef="number">
+          <text>income7</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0f81236" label="Income">
+        <inputExpression id="LiteralExpression_0gw7o44" typeRef="number">
+          <text>income8</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_111dps1" label="Income">
+        <inputExpression id="LiteralExpression_0e1mi2n" typeRef="number">
+          <text>income9</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0x3fgml" label="Income">
+        <inputExpression id="LiteralExpression_0v86lpv" typeRef="number">
+          <text>income10</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1w8uhdb" label="Income">
+        <inputExpression id="LiteralExpression_0riqx04" typeRef="number">
+          <text>income11</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_01v7cvh" label="Income">
+        <inputExpression id="LiteralExpression_14xaoyj" typeRef="number">
+          <text>income12</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_17r9hfs" label="Income">
+        <inputExpression id="LiteralExpression_001u2f3" typeRef="number">
+          <text>income13</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0koo9ms" label="Income">
+        <inputExpression id="LiteralExpression_0dpnd0r" typeRef="number">
+          <text>income14</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1oox3bz" label="Income">
+        <inputExpression id="LiteralExpression_1tu0czb" typeRef="number">
+          <text>income15</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1scso9d" label="Income">
+        <inputExpression id="LiteralExpression_17ay3ns" typeRef="number">
+          <text>income16</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0syg2n4" label="Income">
+        <inputExpression id="LiteralExpression_0zttv94" typeRef="number">
+          <text>income17</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_149irzg" label="Income">
+        <inputExpression id="LiteralExpression_0exn8le" typeRef="number">
+          <text>income18</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_10lsc3k" label="Income">
+        <inputExpression id="LiteralExpression_0yfke58" typeRef="number">
+          <text>income19</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_011dp69" label="Income">
+        <inputExpression id="LiteralExpression_1s4z7ay" typeRef="number">
+          <text>income20</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1um7s4e" label="Income">
+        <inputExpression id="LiteralExpression_18r59tq" typeRef="number">
+          <text>income21</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0lzn8ad" label="Income">
+        <inputExpression id="LiteralExpression_14u2wxe" typeRef="number">
+          <text>income22</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_152ifqx" label="Income">
+        <inputExpression id="LiteralExpression_0b9kxob" typeRef="number">
+          <text>income23</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1m971fu" label="Income">
+        <inputExpression id="LiteralExpression_1d0fp38" typeRef="number">
+          <text>income24</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1jtowgw" label="Income">
+        <inputExpression id="LiteralExpression_0rjw2gn" typeRef="number">
+          <text>income25</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_12ieg9n" label="Income">
+        <inputExpression id="LiteralExpression_1g8sc3a" typeRef="number">
+          <text>income26</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_06psl07" label="Income">
+        <inputExpression id="LiteralExpression_1p5c2r7" typeRef="number">
+          <text>income27</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1fqp6n3" label="Income">
+        <inputExpression id="LiteralExpression_05f7960" typeRef="number">
+          <text>income28</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1jodd09" label="Income">
+        <inputExpression id="LiteralExpression_178l832" typeRef="number">
+          <text>income29</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0yrjyi7" label="Income">
+        <inputExpression id="LiteralExpression_1nva4br" typeRef="number">
+          <text>income30</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1d8netm" label="Income">
+        <inputExpression id="LiteralExpression_14vtrwg" typeRef="number">
+          <text>income31</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1g7qz5c" label="Income">
+        <inputExpression id="LiteralExpression_18jz0ho" typeRef="number">
+          <text>income32</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0r796yt" label="Income">
+        <inputExpression id="LiteralExpression_0726hv6" typeRef="number">
+          <text>income33</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0bfwvbm" label="Income">
+        <inputExpression id="LiteralExpression_12bcdrw" typeRef="number">
+          <text>income34</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1e4xcjy" label="Income">
+        <inputExpression id="LiteralExpression_1rv5ue1" typeRef="number">
+          <text>income35</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_045g9xi" label="Income">
+        <inputExpression id="LiteralExpression_0lveqwf" typeRef="number">
+          <text>income36</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0g9sdzz" label="Income">
+        <inputExpression id="LiteralExpression_0fn4zz0" typeRef="number">
+          <text>income37</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0ece0zj" label="Income">
+        <inputExpression id="LiteralExpression_0twruqb" typeRef="number">
+          <text>income38</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0oejvkb" label="Income">
+        <inputExpression id="LiteralExpression_13w8abm" typeRef="number">
+          <text>income39</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1y9rvkg" label="Income">
+        <inputExpression id="LiteralExpression_00d4ypw" typeRef="number">
+          <text>income40</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0u8hu1m" label="Income">
+        <inputExpression id="LiteralExpression_0q4tm4a" typeRef="number">
+          <text>income41</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1slhakj" label="Income">
+        <inputExpression id="LiteralExpression_1fqqful" typeRef="number">
+          <text>income42</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1ytw5p0" label="Income">
+        <inputExpression id="LiteralExpression_193c63b" typeRef="number">
+          <text>income43</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0pclf0p" label="Income">
+        <inputExpression id="LiteralExpression_1r0jm4z" typeRef="number">
+          <text>income44</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0g1zxde" label="Income">
+        <inputExpression id="LiteralExpression_0i8mvm4" typeRef="number">
+          <text>income45</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1p83qpr" label="Income">
+        <inputExpression id="LiteralExpression_1wvkpk2" typeRef="number">
+          <text>income46</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1od35eo" label="Income">
+        <inputExpression id="LiteralExpression_1i61q0h" typeRef="number">
+          <text>income47</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0dqfhgz" label="Income">
+        <inputExpression id="LiteralExpression_083sumr" typeRef="number">
+          <text>income48</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0qvy5f9" label="Income">
+        <inputExpression id="LiteralExpression_0so1sd6" typeRef="number">
+          <text>income49</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0y08akh" label="Income">
+        <inputExpression id="LiteralExpression_0x7pe6m" typeRef="number">
+          <text>income50</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="Eligibility" name="eligibility" typeRef="string" />
+      <rule id="DecisionRule_1uztgp1">
+        <inputEntry id="UnaryTests_1jxe7xu">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0pditc8">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_104m613">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_09k6gkl">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1gaz1xb">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1plla0q">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1smm6m2">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0f3cegq">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0b6utxp">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_184ciiz">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1fldsxe">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0k2irti">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_15zr674">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0xwtfy6">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1vw8l6t">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1t6ln04">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1faw79g">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0lucpm5">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0bkftfo">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1f6m0rd">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0am2u9g">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0yxxdrs">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_12oe4cn">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0xy04jb">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_17y5xgp">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1yxnxxv">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0rjnday">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0kkb9ws">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0e2lgi6">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0aueli6">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0lux9wk">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1cw7439">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1fgjru2">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1s7bzva">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0irehw3">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1996c6w">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0e523j4">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1qhqxjz">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1d9flvc">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_18syhcf">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1c0wrui">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0rqvag3">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1cxxfsu">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0m4y5ef">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0dodk88">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_12v3rgi">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1bbyarr">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1vt6he0">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_04iqlw2">
+          <text>&lt;2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0m0nnvt">
+          <text>&lt;2</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_12le3ff">
+          <text>"Rejected"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="Decision_0unyeeo">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

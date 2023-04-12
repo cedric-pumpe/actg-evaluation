@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="Definitions_1ul7aia" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="4.12.0">
+  <decision id="Decision_0unyeeo" name="Decision 1">
+    <decisionTable id="DecisionTable_1ug3pg9" hitPolicy="FIRST">
+      <input id="InputClause_1187o13" label="Income">
+        <inputExpression id="LiteralExpression_186afhx" typeRef="number">
+          <text>income</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="Eligibility" name="eligibility" typeRef="string" />
+      <rule id="DecisionRule_1uztgp1">
+        <inputEntry id="UnaryTests_1jxe7xu">
+          <text>&lt;2</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_12le3ff">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1jxb0ob">
+        <inputEntry id="UnaryTests_06s7if7">
+          <text>&lt;2</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0g5x44i">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0jjd88s">
+        <inputEntry id="UnaryTests_0o1nrsy">
+          <text>&lt;2</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0zwzh9y">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1xausmi">
+        <inputEntry id="UnaryTests_07tc4sn">
+          <text>&lt;2</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0n5m00y">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0qm4l9h">
+        <inputEntry id="UnaryTests_1a2mrji">
+          <text>&lt;2</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1x3skek">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_14u6fev">
+        <inputEntry id="UnaryTests_06qh697">
+          <text>&lt;2</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1c3wmv9">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0sxswzo">
+        <inputEntry id="UnaryTests_0yus3h0">
+          <text>&lt;2</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0r4jhs3">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0juh5wv">
+        <inputEntry id="UnaryTests_0qpoj6m">
+          <text>&lt;2</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1thl7d1">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1wlkepj">
+        <inputEntry id="UnaryTests_18cr8cf">
+          <text>&lt;2</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1u1cnl0">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1ojf9xs">
+        <inputEntry id="UnaryTests_0rk3y3i">
+          <text>&lt;2</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1nol600">
+          <text></text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="Decision_0unyeeo">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
